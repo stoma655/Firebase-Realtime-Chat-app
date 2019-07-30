@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login">
+
+    <header class="login-header"></header>
+    <section class="login-in">
+      <main class="login-card">
+        <div class="login-card__title">Вход</div>
+        <label class="custom-input login-card__label">
+          <input class="custom-input__input login-card__input" type="text" id="login" placeholder="E-mail" autocomplete="off" required="required"/><i class="login-card__icon material-icons">person</i>
+          <div class="custom-input__border"></div>
+        </label>
+        <label class="custom-input login-card__label">
+          <input class="custom-input__input login-card__input" type="password" id="pass" placeholder="Password" autocomplete="off" required="required"/><i class="login-card__icon material-icons">visibility</i>
+          <div class="custom-input__border"></div>
+        </label>
+        <button class="login-card__button">Enter</button>
+      </main>
+      <footer class="login-footer"><a class="GoToReg" target="_blank">Registration</a></footer>
+    </section>
+
+</div>
+
+
+<div class="registration">
+    <header class="login-header"></header>
+    <section class="login-in">
+      <main class="login-card">
+        <div class="login-card__title">Registration</div>
+        <label class="custom-input login-card__label">
+          <input class="custom-input__input login-card__input" type="email" id="email" placeholder="E-mail" /><i class="login-card__icon material-icons">person</i>
+          <div class="custom-input__border"></div>
+        </label>
+        <label class="custom-input login-card__label">
+          <input class="custom-input__input login-card__input" type="text" id="pass" placeholder="Password"/><i class="login-card__icon material-icons">visibility</i>
+          <div class="custom-input__border"></div>
+        </label>
+        <label class="custom-input login-card__label">
+          <input class="custom-input__input login-card__input" type="text" id="displayname" placeholder="Display Name" /><i class="login-card__icon material-icons">person</i>
+          <div class="custom-input__border"></div>
+        </label>
+        <button class="login-card__button">Reg me</button>
+      </main>
+    </section>
+
+</div>
+
+
+<div class="chat">
+  <div class="left-bar">
+      <div class="left-bar__title">
+        <span>Сейчас в чате</span> 
+      </div>
+      <div class="online">
+        <ul>
+
+        </ul>
+      </div>
+      <button class="logout">LogOut</button>
+  </div>
+
+  
+  <div class="chat-wrap">
+
+        <div id="topbar">
+          Messages
+        </div>
+        <div id="chat">
+      
+          <div class="mess-area">
+      
+          </div>
+      
+      
+      
+          
+          <div id="writing"><span id="who">John</span> is writing<span class="dot dot-1">.</span><span class="dot dot-2">.</span><span class="dot dot-3">.</span></div>
+        
+        </div>
+
+        <div id="toSend">
+            <input id="message-to-send" type="text" placeholder="Write here...">
+            <div id="send-message" title="enviar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="rgb(81,81,81)"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            </div>
+          </div>
+  </div>
+
+  
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script> 
+<script src = "https://www.gstatic.com/firebasejs/6.2.4/firebase-functions.js"></script> 
+<script src = "https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js" > </script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAWZbJjVxCgpxaNvEJtl_GFfB2Bg86X0-w",
+    authDomain: "test-323b1.firebaseapp.com",
+    databaseURL: "https://test-323b1.firebaseio.com",
+    projectId: "test-323b1",
+    storageBucket: "",
+    messagingSenderId: "426455608698",
+    appId: "1:426455608698:web:969e7d4158ceae89"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="main.js"></script>
+    
+</body>
+</html>
